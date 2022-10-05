@@ -1,5 +1,6 @@
 {
   "root": true,
+  "extends": "./node_modules/gts/",
   "ignorePatterns": ["**/*"],
   "plugins": ["@nrwl/nx"],
   "overrides": [
