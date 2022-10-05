@@ -1,0 +1,81 @@
+:host {
+}
+
+#appContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#appNavbar,
+#appNavbar .app-logo,
+#appNavbar .app-utilities-menu,
+#appNavbar .app-social-accounts {
+  display: flex;
+  align-items: center;
+}
+
+#appNavbar {
+  background: #fff;
+  color: #212121;
+
+  mat-divider[vertical] {
+    border-right-color: rgba(0, 0, 0, 0.12);
+    height: 50%;
+  }
+
+  .app-logo {
+    overflow: hidden;
+
+    img.app-logo-image {
+      width: 40px;
+      height: auto;
+    }
+
+    .app-logo-name {
+      margin-left: 14px;
+      font-family: 'Source Sans Pro', Roboto, sans-serif;
+      font-weight: 900;
+      font-size: 1.61rem;
+      letter-spacing: -0.0161rem;
+      color: #2f2f2f;
+    }
+  }
+
+  .app-utilities-menu {
+    padding: 0 8px;
+  }
+
+  .app-social-accounts {
+    gap: 8px;
+    margin-left: 12px;
+    justify-content: center;
+    position: relative;
+
+    .app-social-link {
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.flex-fill {
+  flex: 1 0 auto;
+}
+
+.nav-horizontal {
+  display: flex;
+  flex-direction: row;
+  padding: 0 32px;
+
+  ::ng-deep .mat-list-item {
+    color: inherit;
+    font-family: 'Noto Sans Mono', monospace;
+  }
+}

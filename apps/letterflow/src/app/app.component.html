@@ -1,0 +1,38 @@
+<mat-sidenav-container id="appContainer">
+  <mat-sidenav-content>
+    <mat-toolbar id="appNavbar">
+      <div class="app-logo">
+        <img
+          class="app-logo-image"
+          src="assets/branding/letterflow-logo-dark.png"
+          alt="LetterFlow logo"
+        />
+        <div class="app-logo-name">
+          <span>{{ appName }}</span>
+        </div>
+      </div>
+      <mat-nav-list class="app-navbar-menu nav-horizontal">
+        <a mat-list-item href="#">Discover</a>
+        <a mat-list-item href="#">Features</a>
+      </mat-nav-list>
+
+      <div class="flex-fill"></div>
+
+      <div class="app-utilities-menu">
+        <button mat-icon-button><mat-icon>dark_mode</mat-icon></button>
+      </div>
+
+      <mat-divider vertical></mat-divider>
+
+      <div class="app-social-accounts">
+        <a class="app-social-link" href="#">
+          <img width="24" src="assets/branding/Twitter-Logo-Black.png" alt="" />
+        </a>
+
+        <a class="app-social-link" href="#">
+          <img width="24" src="assets/branding/GitHub-Mark-32px.png" alt="" />
+        </a>
+      </div>
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>
