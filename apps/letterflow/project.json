@@ -17,7 +17,10 @@
           "apps/letterflow/src/favicon.ico",
           "apps/letterflow/src/assets"
         ],
-        "styles": ["apps/letterflow/src/styles.scss"],
+        "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
+          "apps/letterflow/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
